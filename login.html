@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Flashcards - Login de Usuário</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-main">
+            <img class="header-icon" src="/icons/brain.svg">
+            <h1 class="header-title">QI Labs</h1>
+        </nav>
+        <nav class="header-menu">
+            <a href="/cadastro.html" class="header-menu-reg">Cadastre-se</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h1 id="main-title">Login</h1>
+
+        <form class="formulario">
+            <div class="bloco">
+                <label for="email">Email:</label>
+                <input class="campo" type="email" name="email" id="email" placeholder="Digite o seu e-mail" required>
+            </div>
+
+            <div class="bloco">
+                <label for="pass">Senha:</label>
+                <input class="campo" type="password" name="pass" id="pass" required>
+                <span id="assist-text">Assistive text</span>
+            </div>
+            
+            <button class="botao">Entrar</button>
+        </form>
+    </main>    
+</body>
+
+</html>

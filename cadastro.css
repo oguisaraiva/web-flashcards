@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 100%;
+    background-color: #252142;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(235, 235, 235);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #383554;
+}
+
+.header-main{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-left: 16px;
+}
+
+.header-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.header-menu{
+    display: flex;
+    gap: 36px;
+    padding-right: 16px;
+    font-size: 20px;
+}
+
+.header-menu-log{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.header-menu-log:hover{
+    color: #8882ce;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 106px;
+    gap: 42px;
+}
+
+.content-titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+#main-title{
+    font-size: 66px;
+    font-weight: 700;
+    color: #5e54ba;
+}
+
+#sub-title{
+    font-size: 22px;
+}
+
+#assist-text{
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.bloco{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo{
+    width: 674px;
+    height: 38px;
+    background-color: white;
+    border: 2px solid #7e77a7;
+    border-radius: 8px;
+    padding-inline: 12px;
+}
+
+.botao{
+    width: 192px;
+    height: 48px;
+    background-color: #574ea1;
+    border-radius: 8px;
+    
+    color: white;
+    font-size: 16px;
+}
+
+.botao:hover{
+    background-color: #6d61c9;
+}

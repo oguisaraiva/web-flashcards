@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Flashcards - Cadastro de Usuário</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-main">
+            <img class="header-icon" src="icons/brain.svg">
+            <h1 href="/index.html" class="header-title">QI Labs</h1>
+        </nav>
+        <nav class="header-menu">
+            <a href="/login.html" class="header-menu-log">Entrar</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="content-titles">
+            <h1 id="main-title">Cadastre-se</h1>
+            <p id="sub-title">Com a sua conta você poderá gerenciar suas coleções de flashcards.</p>
+        </div>
+
+        <form class="formulario">
+            <div class="bloco">
+                <label for="nome">Nome:</label>
+                <input class="campo" type="text" name="nome" id="nome" placeholder="Digite o nome completo" required>
+            </div>
+            
+            <div class="bloco">
+                <label for="email">Email:</label>
+                <input class="campo" type="email" name="email" id="email" placeholder="Digite o seu e-mail" required>
+            </div>
+
+            <div class="bloco">
+                <label for="pass">Senha:</label>
+                <input class="campo" type="password" name="pass" id="pass" required>
+                <span id="assist-text">Use ao menos 8 caracteres contendo letras, números e um caracter especial.</span>
+            </div>
+
+            <div class="bloco">
+                <label for="rp-pass">Repetir senha:</label>
+                <input class="campo" type="password" name="rp-pass" id="rp-pass" required>
+            </div>
+
+            <button class="botao" type="submit">Cadastrar</button>
+        </form>
+    </main>    
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 100%;
+    background-color: #252142;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #383554;
+}
+
+.header-main{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-left: 16px;
+}
+
+.header-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.header-menu{
+    display: flex;
+    gap: 36px;
+    padding-right: 16px;
+    font-size: 20px;
+}
+
+.header-menu-col{
+    text-decoration: none;
+    color: white;
+}
+
+.header-menu-col:hover{
+    color: #8882ce;
+}
+
+.header-menu-exit{
+    text-decoration: none;
+    color: white;
+}
+
+.header-menu-exit:hover{
+    color: #8882ce;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 292px;
+    padding-top: 92px;
+}
+
+#main-title{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.search-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.search-bar{
+    background-color: white;
+    border-radius: 4px;
+    padding-inline: 16px;
+    width: 1214px;
+    height: 58px;
+    font-size: 18px;
+}
+
+.search-button{
+    background-color: rgb(118, 98, 172);
+    border-radius: 4px;
+    width: 78px;
+    height: 58px;
+    color: white;
+}
+
+.search-button:hover{
+    background-color: rgb(148, 126, 214);
+}
+
+.new-button{
+    background-color: rgb(118, 98, 172);
+    border-radius: 4px;
+    width: 192px;
+    height: 64px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.new-button:hover{
+    background-color: rgb(148, 126, 214);
+}
+
+.list-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: 42px;
+}
+
+.list-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+    border-radius: 2px;
+    padding-inline: 16px;
+    width: 1292px;
+    height: 52px;
+}
+
+.list-title{
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.list-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
