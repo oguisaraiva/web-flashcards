@@ -71,19 +71,12 @@ body{
 }
 
 .botao{
-    /* Flex */
-    display: flex;
-    align-items: center;
-    padding: 28px;
-    gap: 12px;
-
-    width: 196px;
-    height: 64px;
     background-color: #574ea1;
-    border-radius: 8px;
-    
+    border-radius: 4px;
+    width: 192px;
+    height: 64px;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
 }
 
