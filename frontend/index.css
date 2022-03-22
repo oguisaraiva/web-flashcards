@@ -21,7 +21,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 16px;
-    background-color: #383554;
+    background-color: #312e4d;
 }
 
 .header-main{
@@ -50,7 +50,7 @@ body{
 }
 
 .header-menu-reg:hover{
-    color: #8882ce;
+    color: #a29ce0;
 }
 
 .header-menu-log{
@@ -60,7 +60,7 @@ body{
 }
 
 .header-menu-log:hover{
-    color: #8882ce;
+    color: #a29ce0;
 }
 
 .content{
@@ -97,6 +97,7 @@ body{
 }
 
 .content-card{
+    /* Flex */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,9 +108,16 @@ body{
     border-radius: 16px;
     width: 240px;
     height: 320px;
+
+    transition: 0.3s ease-out
+}
+
+.content-card:hover {
+    transform: translateY(-12px);
 }
 
 .content-double-card{
+    /* Flex */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,6 +129,12 @@ body{
     border-radius: 16px;
     width: 240px;
     height: 320px;
+
+    transition: 0.3s ease-out
+}
+
+.content-double-card:hover {
+    transform: translateY(-12px);
 }
 
 .divider{
