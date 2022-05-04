@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="login.css">
     <title>Flashcards - Login de Usuário</title>
 </head>
@@ -19,24 +20,30 @@
         </nav>
     </header>
 
-    <main class="content">
-        <h1 id="main-title">Login</h1>
+    <div class="container w-50 p-4" id="container">
+        <div class="text-center mt-5">
+            <h1 id="main-title">Login</h1>
+        </div>
 
-        <form class="formulario">
-            <div class="bloco">
-                <label for="email">Email:</label>
-                <input class="campo" type="email" name="email" id="email" placeholder="Digite o seu e-mail" required>
+        <form>
+            <div class="mb-4">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite o seu e-mail" required>
+                <span id="assist-email"></span>
             </div>
 
-            <div class="bloco">
-                <label for="pass">Senha:</label>
-                <input class="campo" type="password" name="pass" id="pass" placeholder="Digite a sua senha" required>
-                <span id="assist-text">Assistive text</span>
+            <div class="mb-4">
+                <label for="pass" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="pass" placeholder="Digite a sua senha" required>
             </div>
-            
-            <button class="botao">Entrar</button>
+
+            <div class="text-center">
+                <button onclick="logarUsuario()" type="reset" class="botao">Entrar</button>
+            </div>
         </form>
-    </main>    
+    </div>
+
+    <script src="/frontend/auth.js"></script>
 </body>
 
 </html>

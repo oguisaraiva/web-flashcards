@@ -3,8 +3,8 @@
 
 * {
     margin: 0;
-    padding: 0;
     border: none;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -68,7 +68,7 @@ body{
     color: #5e54ba;
 }
 
-#assist-text{
+#assist-email{
     font-size: 14px;
     color: #fd1212;
 }

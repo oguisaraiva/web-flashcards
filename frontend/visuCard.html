@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="visuCard.css">
     <title>Flashcards - Coleção de Objetos</title>
 </head>
@@ -21,90 +24,48 @@
         </nav>
     </header>
 
-    <main class="content">
-        <div class="search-container">
-            <h2 id="main-title">Coleção - Objetos</h2>
-
-            <form class="search-form">
-                <input class="search-bar" type="text" placeholder="Busque por um elemento">
-                <button class="search-button"><img src="/icons/search-icon.svg"></button>
-            </form>
-
-            <button class="new-button">Criar novo cartão</button>
-        </div>
-
-        <div class="list-cards">
-            <div class="list-info">
-                <div>
-                    <p class="list-title">Carteira</p>
+    <div class="container w-50 p-5">
+            <h2 class="mt-4" id="main-title">Coleção de cartões</h2>
+            <p>Use a barra de pesquisa abaixo para filtrar os cartões:</p>  
+            <input class="form-control" id="myInput" type="text" placeholder="Busque por um cartão...">
+            
+            <div class="py-4">
+                <button class="new-button" onclick="linkToCreateCard()">Criar novo cartão</button>
+            </div>
+            
+            <div class="list-group" id="myList">
+                <div class="d-flex justify-content-between">
+                    <a href="#" class="list-group-item list-group-item-action rounded-0">Giz de cera</a>
+                    <input onclick="modalDelete()" type="image" id="deleteBtn" src="/icons/trash-bin-wt.svg"/>
                 </div>
-
-                <div class="list-icons">
-                    <img src="/icons/edit.svg">
-                    <img src="/icons/trash-bin.svg">
+                <div class="d-flex justify-content-between">
+                    <a href="#" class="list-group-item list-group-item-action rounded-0">Lapiseira</a>
+                    <input onclick="modalDelete()" type="image" id="deleteBtn" src="/icons/trash-bin-wt.svg"/>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <a href="#" class="list-group-item list-group-item-action rounded-0">Caneta</a>
+                    <input onclick="modalDelete()" type="image" id="deleteBtn" src="/icons/trash-bin-wt.svg"/>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <a href="#" class="list-group-item list-group-item-action rounded-0">Marcador</a>
+                    <input onclick="modalDelete()" type="image" id="deleteBtn" src="/icons/trash-bin-wt.svg"/>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <a href="#" class="list-group-item list-group-item-action rounded-0">Borracha</a>
+                    <input onclick="modalDelete()" type="image" id="deleteBtn" src="/icons/trash-bin-wt.svg"/>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <a href="#" class="list-group-item list-group-item-action rounded-0">Grafite</a>
+                    <input onclick="modalDelete()" type="image" id="deleteBtn" src="/icons/trash-bin-wt.svg"/>
                 </div>
             </div>
+    </div>
 
-            <div class="list-info">
-                <div>
-                    <p class="list-title">Giz de cera</p>
-                </div>
+    <div class="text-center">
+        <button class="play-button" onclick="linkToPlay()">Vamos jogar!</button>
+    </div>
 
-                <div class="list-icons">
-                    <img src="/icons/edit.svg">
-                    <img src="/icons/trash-bin.svg">
-                </div>
-            </div>
-
-            <div class="list-info">
-                <div>
-                    <p class="list-title">Celular</p>
-                </div>
-
-                <div class="list-icons">
-                    <img src="/icons/edit.svg">
-                    <img src="/icons/trash-bin.svg">
-                </div>
-            </div>
-
-            <div class="list-info">
-                <div>
-                    <p class="list-title">Borracha</p>
-                </div>
-
-                <div class="list-icons">
-                    <img src="/icons/edit.svg">
-                    <img src="/icons/trash-bin.svg">
-                </div>
-            </div>
-
-            <div class="list-info">
-                <div>
-                    <p class="list-title">Caneca</p>
-                </div>
-
-                <div class="list-icons">
-                    <img src="/icons/edit.svg">
-                    <img src="/icons/trash-bin.svg">
-                </div>
-            </div>
-
-            <div class="list-info">
-                <div>
-                    <p class="list-title">Lapiseira</p>
-                </div>
-
-                <div class="list-icons">
-                    <img src="/icons/edit.svg">
-                    <img src="/icons/trash-bin.svg">
-                </div>
-            </div>
-        </div>
-
-        <div class="play-container">
-            <button class="play-button">Vamos jogar!</button>
-        </div>
-    </main>    
+    <script src="/frontend/visuCard.js"></script>
 </body>
 
 </html>

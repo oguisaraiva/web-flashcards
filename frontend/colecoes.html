@@ -22,62 +22,15 @@
     </header>
 
     <main class="content">
-        <button class="botao">Criar coleção</button>
+        <button onclick="window.location.href='novaColecao.html'" class="botao">Criar coleção</button>
 
-        <section class="content-container">
-            <div class="content-card">
-                <div class="content-card-img">
-                    <img src="/icons/pencil.svg">
-                </div>
-                <div class="content-card-title">
-                    <h2 class="content-card-text">Animais</h2>
-                </div>
-                <div class="content-card-icons">
-                    <img src="/icons/trash-bin.svg">
-                    <img src="/icons/edit.svg">
-                </div>
-            </div>
-            
-            <div class="content-card">
-                <div class="content-card-img">
-                    <img src="/icons/pencil.svg">
-                </div>
-                <div class="content-card-title">
-                    <h2 class="content-card-text">Objetos</h2>
-                </div>
-                <div class="content-card-icons">
-                    <img src="/icons/trash-bin.svg">
-                    <img src="/icons/edit.svg">
-                </div>
-            </div>
-
-            <div class="content-card">
-                <div class="content-card-img">
-                    <img src="/icons/pencil.svg">
-                </div>
-                <div class="content-card-title">
-                    <h2 class="content-card-text">Cores</h2>
-                </div>
-                <div class="content-card-icons">
-                    <img src="/icons/trash-bin.svg">
-                    <img src="/icons/edit.svg">
-                </div>
-            </div>
-
-            <div class="content-card">
-                <div class="content-card-img">
-                    <img src="/icons/pencil.svg">
-                </div>
-                <div class="content-card-title">
-                    <h2 class="content-card-text">Adjetivos</h2>
-                </div>
-                <div class="content-card-icons">
-                    <img src="/icons/trash-bin.svg">
-                    <img src="/icons/edit.svg">
-                </div>
-            </div>
-        </section>
-    </main>    
+        <div class="content-container" id="containerList">
+            <!-- Insert of collections by javascript -->
+        </div>
+    </main>
+    
+    <script src="/frontend/novaColecao.js"></script>
+    <script src="/frontend/colecoes.js"></script>
 </body>
 
 </html>

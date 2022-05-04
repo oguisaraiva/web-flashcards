@@ -28,13 +28,19 @@
         </div>
 
         <section class="content-container">
-            <div class="content-card">
-                <div>
-                    <h2 class="content-card-text">Maçã</h2>
+            <a onclick="mostrarCard()">
+                <div class="content-card">
+                    <div>
+                        <h2 class="content-card-text">Maçã</h2>
+                    </div>
                 </div>
-            </div>
+            </a>
             
-            <div class="content-double-card">
+            <div id="content-arrow-icon">
+                <img src="/icons/arrow.svg">
+            </div>
+
+            <div id="content-double-card">
                 <div>
                     <h2 class="content-card-text">Maçã</h2>
                 </div>
@@ -46,7 +52,9 @@
                 </div>
             </div>
         </section>
-    </main>    
+    </main>
+
+    <script src="/frontend/index.js"></script>
 </body>
 
 </html>
